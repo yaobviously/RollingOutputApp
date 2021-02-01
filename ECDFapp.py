@@ -11,7 +11,7 @@ import streamlit as st
 
 
 players = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/stacked2019to2021.csv?raw=true')
-todaysp = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/draftkings_NBA_2021-02-01_players.csv?raw=true')
+todaysp = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/fctodayd.csv?raw=true')
 
 playerlist = todaysp['Player'].unique().tolist()
 
