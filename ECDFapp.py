@@ -29,12 +29,12 @@ def ecdf(data):
     y = np.arange(1, n+1) / n
     return (x,y)
 
-x, y = ecdf(players[players['Player'] == 'James Harden']['PlayerFP'])
-a, b = ecdf(players[players['Player'] == 'Luka Doncic']['PlayerFP'])
-c, d = ecdf(players[players['Player'] == 'LeBron James']['PlayerFP'])
-plt.scatter(x=x, y=y, label='Harden')
-plt.scatter(x=a, y=b, label='Luka')
-plt.scatter(x=c, y= d, label='LeBron')
+x, y = ecdf(players[players['Player'] == player1]['PlayerFP'])
+a, b = ecdf(players[players['Player'] == player2]['PlayerFP'])
+c, d = ecdf(players[players['Player'] == player3]['PlayerFP'])
+plt.scatter(x=x, y=y, label= player1)
+plt.scatter(x=a, y=b, label= player2)
+plt.scatter(x=c, y= d, label= player3)
 plt.legend(loc='best')
 
 
