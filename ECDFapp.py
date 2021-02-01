@@ -13,7 +13,7 @@ players = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/s
 todaysp = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/draftkings_NBA_2021-02-01_players.csv?raw=true')
 
 playerlist = todaysp['Player'].unique().tolist()
-playerlist
+
 
 st.sidebar.header('Select Players')
 st.write("Player Output Comparisons")
