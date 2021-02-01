@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 players = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/stacked2019to2021.csv?raw=true')
 todaysp = pd.read_csv(r'https://github.com/yaobviously/playerplotter/blob/main/draftkings_NBA_2021-02-01_players.csv?raw=true')
