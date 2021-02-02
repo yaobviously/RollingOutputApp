@@ -30,7 +30,6 @@ def ecdf(data):
     y = np.arange(1, n+1) / n
     return (x,y)
 
-fig, ax = plt.subplots()
 
 x, y = ecdf(players[players['Player'] == player1]['PlayerFP'])
 a, b = ecdf(players[players['Player'] == player2]['PlayerFP'])
@@ -41,4 +40,4 @@ plt.scatter(x=c, y= d, label= player3)
 plt.legend(loc='best')
 
 
-st.pyplot(fig)
+st.pyplot()
