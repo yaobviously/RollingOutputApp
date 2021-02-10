@@ -27,10 +27,10 @@ player = st.sidebar.selectbox('Player', playerlist)
 
 def rollingplayer(x):
     _df = players[players['Player'] == x].reset_index()
-    _df['rollingfp/36'] = _df['GameFP/36'].rolling(8, min_periods =3).mean()
+    _df['rollingFP/36'] = _df['GameFP/36'].rolling(8, min_periods =3).mean()
     _df['rollingusage'] = _df['Usage'].rolling(8, min_periods = 3).mean()
     
-    return sb.lineplot(data= _df[['MIN', 'rollingusage', 'PlayerFP', 'rollingfp/36']], legend= 'brief')
+    return sb.lineplot(data= _df[['MIN', 'rollingusage', 'PlayerFP', 'rollingFP/36']], legend= 'brief')
 
 rollingplayer(player)
 
