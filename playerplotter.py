@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
-import seaborn as seaborn
+import seaborn as sb
 
 players = pd.read_csv(r'https://raw.githubusercontent.com/yaobviously/playerplotter/main/boxscoreappdata.csv')
 todaysp = pd.read_csv(r'https://raw.githubusercontent.com/yaobviously/playerplotter/main/slatetoday.csv')
