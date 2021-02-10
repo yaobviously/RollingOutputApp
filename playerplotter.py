@@ -11,7 +11,7 @@ import streamlit as st
 import seaborn as seaborn
 
 players = pd.read_csv(r'C:\Learning to Code\code\DailyFantasyCSV\boxscoreappdata.csv')
-todaysp = pd.read_csv(r'C:\Users\yaobv\Downloads\draftkings_NBA_2021-02-10_players.csv')
+todaysp = pd.read_csv(r'https://raw.githubusercontent.com/yaobviously/playerplotter/main/slatetoday.csv')
 todaysp = todaysp.sort_values(by='Salary', ascending=False)
 
 playerlist = todaysp['Player'].unique().tolist()
