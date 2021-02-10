@@ -31,6 +31,8 @@ def rollingplayer(x):
     
     return sb.lineplot(data= _df[['MIN', 'rollingusage', 'PlayerFP', 'rollingfp']], legend= 'brief')
 
-rollingplayer(player)
+fig = rollingplayer(player)
+
+st.pyplot(fig)
 
 
